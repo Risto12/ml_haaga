@@ -1,0 +1,59 @@
+#img-container{
+    margin-top:20px;
+    position:relative;
+}
+
+#head-main{
+    color:black;
+    text-transform: uppercase;
+    animation-name:moveInRight;
+    animation-duration:5s;
+    backface-visibility: hidden; /* prevents shaking */
+    position:absolute;
+    top:15%;
+    left:31%;
+    font-family: 'Permanent Marker', 'Dancing Script', cursive;
+    font-weight: 800;
+}
+
+#head-sub{
+    color:#fff;
+    text-transform: uppercase;
+    animation-name:moveInLeft;
+    animation-duration:10s;
+    backface-visibility: hidden; /* prevents shaking */
+    position:absolute;
+    top:90%;
+    left:34%;
+    font-family: 'Permanent Marker', 'Dancing Script', cursive;
+    font-weight: 800;
+}
+
+  @keyframes moveInLeft{
+    0%{
+      opacity:0;
+      transform:translateX(-400px);
+    }
+    
+    20%{
+      opacity:0;
+      transform:translateX(-400px);
+    }
+
+    100%{
+      opacity:1;
+      transform:translate(0);
+    }
+  }
+
+  @keyframes moveInRight{
+    0%{
+      opacity:0;
+      transform:translateX(400px);
+    }
+    
+    100%{
+      opacity:1;
+      transform:translate(0);
+    }
+  }
