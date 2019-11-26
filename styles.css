@@ -29,6 +29,20 @@
     font-weight: 800;
 }
 
+#content-area{
+  background-color: rgb(255, 252, 252);
+  position:relative;
+}
+
+#chatbot{
+  position:absolute;
+  height:400px;
+  width:300px;
+  background-color:white;
+  left:77%;
+  top:65%;
+}
+
   @keyframes moveInLeft{
     0%{
       opacity:0;
