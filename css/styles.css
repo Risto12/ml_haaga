@@ -1,0 +1,144 @@
+body{
+  background-color: rgba(255, 209, 5, 0.411);
+}
+
+.wc-chatview-panel {
+  width: 400px;
+  height: 450px;
+  position: relative;
+  background-color:white;
+}
+
+#img-container{
+  margin-top:20px;
+  position:relative;
+}
+
+#head-main{
+  color:black;
+  text-transform: uppercase;
+  animation-name:moveInRight;
+  animation-duration:5s;
+  backface-visibility: hidden; /* prevents shaking */
+  position:absolute;
+  top:15%;
+  left:31%;
+  font-family: 'Permanent Marker', 'Dancing Script', cursive;
+  font-weight: 800;
+}
+
+#head-sub{
+  color:#fff;
+  text-transform: uppercase;
+  animation-name:moveInLeft;
+  animation-duration:10s;
+  backface-visibility: hidden; /* prevents shaking */
+  position:absolute;
+  top:90%;
+  left:34%;
+  font-family: 'Permanent Marker', 'Dancing Script', cursive;
+  font-weight: 800;
+}
+
+#content-area{
+  background-color: rgb(255, 252, 252);
+  position:relative;
+}
+
+#bot {
+  position: fixed;
+  bottom: 450px;
+  right:500px;
+  z-index:2;
+  display:none;
+}
+
+#botButton{
+  position: fixed;
+  bottom: 0px;
+  right: 150px;
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  display: block;
+  background-color:#0078d7;
+  animation-name:bounche;
+  animation-duration:2s;
+  backface-visibility: hidden; /* prevents shaking */
+  border-radius: 10px 10px 0px 0px;
+}
+
+#botButton:hover{
+  background-color:#1193fd;;
+}
+
+#chatText{
+  color:white;
+}
+
+#botButtonText{
+  color:white;
+  margin-left:80px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+#closeBot{
+  color:white;
+  position: fixed;
+  bottom: 419px;
+  right: 118px;
+  cursor: pointer;
+  z-index:5;
+  display:none;
+}
+
+@keyframes moveInLeft{
+  0%{
+    opacity:0;
+    transform:translateX(-400px);
+  }
+    
+  20%{
+    opacity:0;
+     transform:translateX(-400px);
+  }
+
+  100%{
+    opacity:1;
+    transform:translate(0);
+  }
+}
+
+@keyframes moveInRight{
+  0%{
+    opacity:0;
+    transform:translateX(400px);
+  }
+    
+  100%{
+    opacity:1;
+    transform:translate(0);
+  }
+}
+
+@keyframes bounche{
+  0%{
+    transform:translateY(0);
+  }
+  
+  25%{
+    transform:translateY(-20px);
+  }
+
+  50%{
+    transform:translateY(0px);
+  }
+
+  75%{
+    transform:translateY(-20px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
