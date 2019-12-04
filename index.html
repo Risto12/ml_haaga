@@ -14,6 +14,25 @@
 <body>
     <div class="container-fluid" >
         <div class="container" id="img-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Company name</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="margin-left:60px">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item" style="margin-left:60px">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                    <li class="nav-item" style="margin-left:60px">
+                      <a class="nav-link" href="#">Insurances</a>
+                    </li>
+                    <li class="nav-item" style="margin-left:60px">
+                        <a class="nav-link" href="#">About us</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
             <h1 id="head-main">Life is for living</h1>
             <h1 id="head-sub">Don't miss it</h1>
             <img src="head.jpg" class="img-thumbnail" id="img-head" alt="Responsive image">
@@ -38,42 +57,45 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="name">Name</label>
-                                                <input type="text" class="form-control" id="name" placeholder="example Matti">
+                                                <input type="text" class="form-control" id="name" placeholder="E.g. Matti">
+                                            </div>
                                                 <div class="form-group col-md-2">
-                                                    <label for="year">Birth year</label>
-                                                    <input type="text" class="form-control" id="year" placeholder="yyyy">
-                                                </div>
+                                                <label for="birthYear">Birth year</label>
+                                                <input type="year" class="form-control" id="birthYear" placeholder="1900">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label for="inputEmail4">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4" placeholder="name@company.com">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email" placeholder="E.g. name@company.com">
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <label for="inputPassword4">Phone</label>
-                                                <input type="password" class="form-control" id="inputPassword4" placeholder="+358...">
+                                                <label for="pass">Phone number</label>
+                                                <input type="text" class="form-control" id="pass" placeholder="+358...">
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputAddress">Address</label>
-                                            <input type="text" class="form-control" id="inputAddress" placeholder="">
                                         </div>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label for="inputCity">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
+                                                <label for="postalCode">Postal code</label>
+                                                <input type="text" class="form-control" id="postalCode" placeholder="00150">
                                             </div>
+                                        </div>
+                                        <div class="form-row">
                                             <div class="form-group col-md-2">
-                                                <label for="inputZip">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
+                                                <label for="luggage">Lugage insurance amount</label>
+                                                <input type="number" class="form-control" id="luggage" placeholder="0">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                                Check the box if the trip is longer than 1.5 months
+                                            <input class="form-check-input" type="checkbox" id="durationCheck">
+                                            <label class="form-check-label" for="durationCheck">
+                                                Do you project your trip will be more than 1.5 months long?
+                                            </label>
+                                            <br>
+                                            <input class="form-check-input" type="checkbox" id="kelaCheck">
+                                            <label class="form-check-label" for="kelaCheck">
+                                                Do you have residence permit and Kela card?
                                             </label>
                                         </div>
                                         </div>
