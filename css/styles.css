@@ -93,6 +93,13 @@ body{
   display:none;
 }
 
+#mainHeader{
+  font-weight: 800;
+}
+
+#smallHeader{
+ font-size:28px;
+}
 @keyframes moveInLeft{
   0%{
     opacity:0;

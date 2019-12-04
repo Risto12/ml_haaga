@@ -21,8 +21,8 @@
         <div class="container">
             <span class="d-block p-2 text-black" id="content-area">
                 <div style="margin-bottom:50px" class="container">
-                    <h2 class="card-title">insert header</h2>
-                    <p class="card-text">insert text</p>
+                    <h2 class="card-title" id="mainHeader">Business or pleasure, you deserve to travel with confidence!</h2>
+                    <p class="card-text" id="smallHeader">Let's get your insurance quote</p>
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onClick="openChatBot()">
                         Open form
                     </button>
@@ -32,41 +32,48 @@
                         <div class="card-group">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Sell your soul</h5>
+                                    <h5 class="card-title">Please enter your information</h5>
                                     <form>
+                                        <!-- Firstname -->
                                         <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Email</label>
-                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword4">Phone</label>
-                                            <input type="password" class="form-control" id="inputPassword4" placeholder="+358...">
-                                        </div>
-                                        </div>
-                                        <div class="form-group">
-                                        <label for="inputAddress">Address</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                        <label for="inputAddress2">Mastercard</label>
-                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Trust me">
+                                            <div class="form-group col-md-6">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" placeholder="example Matti">
+                                                <div class="form-group col-md-2">
+                                                    <label for="year">Birth year</label>
+                                                    <input type="text" class="form-control" id="year" placeholder="yyyy">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputCity">City</label>
-                                            <input type="text" class="form-control" id="inputCity">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="name@company.com">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Phone</label>
+                                                <input type="password" class="form-control" id="inputPassword4" placeholder="+358...">
+                                            </div>
                                         </div>
-                                        <div class="form-group col-md-2">
-                                            <label for="inputZip">Zip</label>
-                                            <input type="text" class="form-control" id="inputZip">
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="">
                                         </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck">
                                             <label class="form-check-label" for="gridCheck">
-                                                Over 1,5k
+                                                Check the box if the trip is longer than 1.5 months
                                             </label>
                                         </div>
                                         </div>
@@ -77,9 +84,6 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top:50px" class="container">
-                    <p>maybe text?</p>
-                </div>  
             </span>
         </div>  
     </div>
