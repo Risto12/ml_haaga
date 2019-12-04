@@ -6,6 +6,7 @@
     document.getElementById("phoneNumber").value = params.get("phoneNumber")
     document.getElementById("postalCode").value = params.get("postalCode")
     document.getElementById("luggage").value = params.get("luggage")
+    document.getElementById("medical").value = params.get("medical")
     document.getElementById("duration").checked = params.get("duration") === "true" ? true : false
     document.getElementById("kela").checked = params.get("kela") === "true" ? true : false
 })();
