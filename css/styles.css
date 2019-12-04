@@ -3,9 +3,16 @@ body{
 }
 
 .wc-chatview-panel {
-  width: 400px;
+  width: 400px; 
   height: 450px;
-  position: relative;
+  position:absolute;;
+  background-color:white;
+}
+
+#chatviewBig{
+  width: 100% !important; 
+  height: 100% !important;
+  position:fixed;
   background-color:white;
 }
 
@@ -88,6 +95,16 @@ body{
   position: fixed;
   bottom: 419px;
   right: 118px;
+  cursor: pointer;
+  z-index:5;
+  display:none;
+}
+
+#biggerSmaller{
+  color:white;
+  position: fixed;
+  bottom: 420px;
+  right: 140px;
   cursor: pointer;
   z-index:5;
   display:none;
